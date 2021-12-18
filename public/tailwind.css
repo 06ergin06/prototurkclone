@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer components {
+  .nav-link {
+    @apply flex items-center h-10 rounded px-3 text-prototurk font-medium text-sm hover:bg-gray-100 transition-colors dark:text-gray-300 dark:hover:bg-gray-800 dark:hover:text-white;
+  }
+  .nav-link.active {
+    @apply bg-prototurk text-white
+  }
+  .modal{ 
+    @apply fixed inset-0 bg-prototurk bg-opacity-60 z-50 flex items-center justify-center opacity-0 invisible transition-opacity 
+  }
+  .modal.active {
+    @apply fixed inset-0 bg-prototurk bg-opacity-60 flex items-center justify-center opacity-100 visible
+  }
+  .modal-content{
+    @apply bg-white rounded p-10 max-w-full min-w-[600px] dark:bg-gray-800
+  }
+  .slider-item{
+    @apply  border dark:border-gray-700  flex flex-col items-center px-4 py-7 rounded  transition-colors 
+  }
+  .sidebar{
+    @apply w-full lg:w-64 absolute lg:relative scale-90 lg:scale-100 inset-0 top-15 lg:top-0 opacity-0 lg:opacity-100 invisible lg:visible flex-shrink-0 border-r p-2 flex flex-col border-gray-100 dark:border-gray-800 divide-solid divide-gray-100 dark:divide-gray-800 divide-y overflow-auto transition-all
+  }
+  .sidebar.active{
+    @apply  h-full bg-white dark:bg-gray-900 z-10 opacity-100 visible w-64 scale-100
+  }
+}
+@layer base {
+  @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
+  html {
+    font-family: "Montserrat", sans-serif;
+  }
+}

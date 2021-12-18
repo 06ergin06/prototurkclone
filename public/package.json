@@ -1,0 +1,16 @@
+{
+  "name": "protailwind",
+  "version": "1.0.0",
+  "description": "",
+  "main": "tailwind.config.js",
+  "scripts": {
+    "build": "npx tailwindcss -i tailwind.css -o style.css --minify ",
+    "watch": "npx tailwindcss -i tailwind.css -o style.css -w --minify "
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "lodash": "^4.17.21"
+  }
+}
