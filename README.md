@@ -1,5 +1,5 @@
 # [Protorurk.com](https://prototurk.com/) Clone
-It was a tailwind css exercise
+It was a great exercise with a TailwindCSS.
 ### Educator : Tayfun Erbilen
 ----------------
 [Website](https://prototurkclone.netlify.app/) <br><br>
